@@ -9,8 +9,8 @@ static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
 
 /* disable bold, italic and roman fonts globally */
 int disablebold = 0;
-int disableitalic = 0;
-int disableroman = 0;
+int disableitalic = 1;
+int disableroman = 1;
 
 /* Spare fonts */
 static char *font2[] = {
@@ -240,6 +240,9 @@ ResourcePref resources[] = {
 		{ "cwscale",      FLOAT,   &cwscale },
 		{ "chscale",      FLOAT,   &chscale },
 		{ "alpha",        FLOAT,   &alpha },
+		{ "disablebold",  INTEGER, &disablebold },
+		{ "disableitalic",INTEGER, &disableitalic },
+		{ "disableroman", INTEGER, &disableroman },
 };
 
 /*
