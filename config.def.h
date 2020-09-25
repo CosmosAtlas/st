@@ -12,6 +12,13 @@ int disablebold = 0;
 int disableitalic = 0;
 int disableroman = 0;
 
+/* Spare fonts */
+static char *font2[] = {
+	"Iosevka Nerd Font:pixelsize=12:antialias=true:autohint=true",
+	"JoyPixels:pixelsize=12:antialias=true:autohint=true",
+	"Sarasa Term SC:pixelsize=12:antialias=true:autohint=true",
+};
+
 static int borderpx = 2;
 
 /*
